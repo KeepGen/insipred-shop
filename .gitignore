@@ -1,5 +1,6 @@
-### node_modules folder
-/node_modules
+### Modules and Production folders
+node_modules/
+dist/
 
 ### VisualStudioCode template
 .vscode/*
