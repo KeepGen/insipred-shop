@@ -5,11 +5,23 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <link rel="preload" href="fonts/inter-regular.woff2" as="font" crossorigin>
+   <link rel="preload" href="fonts/inter-semi-bold.woff2" as="font" crossorigin>
+   <link rel="preload" href="fonts/inter-bold.woff2" as="font" crossorigin>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+   <link rel="manifest" href="icon/site.webmanifest">
+   <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#ffc40d">
+   <meta name="theme-color" content="#ffffff">
+
    <title>Inspired – Онлайн магазин нижнего белья</title>
 </head>
 <body>
 <header class="header">
-   <div class="container">
+   <div class="container header__container">
       <a href="tel:89304902620" class="header__phone header__link">8 930 490 26 20</a>
 
       <img class="header__logo" src="img/logo.svg" alt="Логотип Inspired">
@@ -61,7 +73,7 @@
 
          <ul class="navigation__category category">
             <li class="category__item">
-               <a href="#" class="category__link">Бюстгальтеры</a>
+               <a href="#" class="category__link category__link_active">Бюстгальтеры</a>
             </li>
             <li class="category__item">
                <a href="#" class="category__link">Трусы</a>
@@ -105,9 +117,33 @@
 
                   <div class="product__row">
                      <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
+                  </div><!-- /.product__row -->
+
+                  <ul class="product__color-list">
+                     <li class="product__color-item">
+                        <div class="color color_red color_check"></div>
+                     </li><!-- /.product__color-item-->
+                     <li class="product__color-item">
+                        <div class="color color_brown"></div>
+                     </li><!-- /.product__color-item-->
+                     <li class="product__color-item">
+                        <div class="color color_black"></div>
+                     </li><!-- /.product__color-item-->
+                  </ul>
+               </article>
+            </li><!-- /.goods__item -->
+
+            <li class="goods__item">
+               <article class="product">
+                  <a href="#" class="product__link">
+                     <img src="img/product02.jpg" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
+                     <h3 class="product__title">Бюстгальтер-Балконет Bien из Микрофибры</h3>
+                  </a>
+
+                  <div class="product__row">
+                     <p class="product__price">руб 1799</p>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
                   </div><!-- /.product__row -->
 
                   <ul class="product__color-list">
@@ -133,9 +169,33 @@
 
                   <div class="product__row">
                      <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
+                  </div><!-- /.product__row -->
+
+                  <ul class="product__color-list">
+                     <li class="product__color-item">
+                        <div class="color color_red color_check"></div>
+                     </li><!-- /.product__color-item-->
+                     <li class="product__color-item">
+                        <div class="color color_brown"></div>
+                     </li><!-- /.product__color-item-->
+                     <li class="product__color-item">
+                        <div class="color color_black"></div>
+                     </li><!-- /.product__color-item-->
+                  </ul>
+               </article>
+            </li><!-- /.goods__item -->
+
+            <li class="goods__item">
+               <article class="product">
+                  <a href="#" class="product__link">
+                     <img src="img/product02.jpg" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
+                     <h3 class="product__title">Бюстгальтер-Балконет Bien из Микрофибры</h3>
+                  </a>
+
+                  <div class="product__row">
+                     <p class="product__price">руб 1799</p>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
                   </div><!-- /.product__row -->
 
                   <ul class="product__color-list">
@@ -161,9 +221,7 @@
 
                   <div class="product__row">
                      <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
                   </div><!-- /.product__row -->
 
                   <ul class="product__color-list">
@@ -183,71 +241,13 @@
             <li class="goods__item">
                <article class="product">
                   <a href="#" class="product__link">
-                     <img src="img/product01.png" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
+                     <img src="img/product02.jpg" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
                      <h3 class="product__title">Бюстгальтер-Балконет Bien из Микрофибры</h3>
                   </a>
 
                   <div class="product__row">
                      <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
-                  </div><!-- /.product__row -->
-
-                  <ul class="product__color-list">
-                     <li class="product__color-item">
-                        <div class="color color_red color_check"></div>
-                     </li><!-- /.product__color-item-->
-                     <li class="product__color-item">
-                        <div class="color color_brown"></div>
-                     </li><!-- /.product__color-item-->
-                     <li class="product__color-item">
-                        <div class="color color_black"></div>
-                     </li><!-- /.product__color-item-->
-                  </ul>
-               </article>
-            </li><!-- /.goods__item -->
-
-            <li class="goods__item">
-               <article class="product">
-                  <a href="#" class="product__link">
-                     <img src="img/product01.png" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
-                     <h3 class="product__title">Бюстгальтер-Балконет Bien из Микрофибры</h3>
-                  </a>
-
-                  <div class="product__row">
-                     <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
-                  </div><!-- /.product__row -->
-
-                  <ul class="product__color-list">
-                     <li class="product__color-item">
-                        <div class="color color_red color_check"></div>
-                     </li><!-- /.product__color-item-->
-                     <li class="product__color-item">
-                        <div class="color color_brown"></div>
-                     </li><!-- /.product__color-item-->
-                     <li class="product__color-item">
-                        <div class="color color_black"></div>
-                     </li><!-- /.product__color-item-->
-                  </ul>
-               </article>
-            </li><!-- /.goods__item -->
-
-            <li class="goods__item">
-               <article class="product">
-                  <a href="#" class="product__link">
-                     <img src="img/product01.png" alt="Бюстгальтер-Балконет Bien из Микрофибры" class="product__image">
-                     <h3 class="product__title">Бюстгальтер-Балконет Bien из Микрофибры</h3>
-                  </a>
-
-                  <div class="product__row">
-                     <p class="product__price">руб 1799</p>
-                     <button class="product__btn-favorite" aria-label="Добавить в избранное">
-                        .
-                     </button>
+                     <button class="product__btn-favorite" aria-label="Добавить в избранное"></button>
                   </div><!-- /.product__row -->
 
                   <ul class="product__color-list">

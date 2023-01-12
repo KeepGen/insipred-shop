@@ -1,0 +1,59 @@
+.product {
+   &__link {
+      margin-bottom: 16px;
+      @include tablet {
+         margin-bottom: 10px;
+      }
+   }
+   &__image {
+      margin-bottom: 16px;
+      @include tablet {
+         margin-bottom: 10px;
+      }
+   }
+   &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 16px;
+      @include tablet {
+         font-size: 12px;
+         line-height: 15px;
+         margin-bottom: 10px;
+      }
+   }
+   &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      @include tablet {
+         margin-bottom: 10px;
+      }
+   }
+   &__price {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      @include tablet {
+         font-size: 12px;
+         line-height: 15px;
+         margin-bottom: 10px;
+      }
+   }
+   &__btn-favorite {
+      height: 24px;
+      width: 24px;
+      background-image: url("../img/icon-fav.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+   &__color-list {
+
+   }
+   &__color-item {
+
+   }
+}
+
+@include tablet {}
