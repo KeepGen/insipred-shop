@@ -30,7 +30,7 @@
       &:hover {
          color: $gray;
       }
-      &::after {
+      &:after {
          content: '';
          position: absolute;
          bottom: -10px;
@@ -48,7 +48,7 @@
       }
       &_active {
          pointer-events: none;
-         &::after {
+         &:after {
             opacity: 1;
          }
       }
